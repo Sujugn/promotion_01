@@ -8,4 +8,67 @@ li {
 a {
   text-decoration: none;
 }
+button {
+  border: none;
+}
 
+#menu {
+  width: 100%;
+  position: fixed;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: flex;
+  li {
+    a {
+      color: white;
+      font-weight: 300;
+    }
+  }
+
+  .category {
+    display: flex;
+    li {
+      margin: 30 25px;
+      a {
+      }
+    }
+  }
+
+  .quick {
+    display: flex;
+    li {
+      margin: 30px 20px;
+      a {
+      }
+    }
+  }
+}
+
+#fullpage {
+  width: 1920px;
+  height: 1080px;
+  #intro {
+    .bg {
+      width: 100%;
+      height: 1080px;
+      overflow: hidden;
+      margin: 0 auto;
+      position: relative;
+      video {
+        width: 100%;
+      }
+    }
+
+    .visual_btn {
+      position: absolute;
+      button {
+        border: 1px solid #000;
+        width: 179px;
+        height: 62px;
+        background-color: transparent;
+      }
+    }
+  }
+}

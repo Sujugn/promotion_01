@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>메인페이지</title>
+    <link rel="stylesheet" href="./css/main.scss" />
+
+    <!-- /* fullPage cdn */ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css"
+    />
+  </head>
+  <body>
+    <ul id="menu">
+      <li data-menuanchor="firstPage" class="active">
+        <a href="#firstPage">page1</a>
+      </li>
+      <li data-menuanchor="secondPage"><a href="#secondPage">page2</a></li>
+      <li data-menuanchor="3rdPage"><a href="#3rdPage">page3</a></li>
+      <li data-menuanchor="4rdPage"><a href="#4rdPage">page4</a></li>
+      <li data-menuanchor="5rdPage"><a href="#5rdPage">page5</a></li>
+    </ul>
+    <!-- //menu -->
+
+    <div id="fullpage">
+      <div class="section" class="section active">section1</div>
+      <div class="section">section2</div>
+      <div class="section">section3</div>
+      <div class="section"></div>
+      <div class="section"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script>
+
+    <script>
+      new fullpage("#fullpage", {
+        autoScrolling: true,
+        scrollHorizontally: true,
+        anchors: ["firstPage", "secondPage", "3rdPage", "4rdPage", "5rdPage"],
+        menu: "#menu",
+      });
+    </script>
+  </body>
+</html>

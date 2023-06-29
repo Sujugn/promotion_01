@@ -18,7 +18,19 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+
+        <!-- /* AOS 라이브러리 */ -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+  <!-- /* Swiper 라이브러리 */ -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   </head>
+
   <body>
     <div id="menu">
       <ul class="category">
@@ -26,7 +38,7 @@
           <a href="#firstPage">Best</a>
         </li>
         <li data-menuanchor="secondPage"><a href="#secondPage">New</a></li>
-        <li data-menuanchor="3rdPage"><a href="#3rdPage">page3</a></li>
+        <li data-menuanchor="3rdPage"><a href="#3rdPage">About</a></li>
         <li data-menuanchor="4rdPage"><a href="#4rdPage">page4</a></li>
         <li data-menuanchor="5rdPage"><a href="#5rdPage">page5</a></li>
       </ul>
@@ -45,22 +57,36 @@
       <div class="section" id="intro">
         <div class="bg">
           <video data-autoplay loop muted>
-            <source src="images/visual_video.mp4" type="video/mp4" />
+            <source src="images/visual_video2.mp4" type="video/mp4" />
           </video>
         </div>
-        <div class="visual_btn">
-          <button type="button">제품 더 알아보기</button>
+        <div class="visual_text">
+          <h2 >제목</h2>
+          <p>소제목</p>
+          <!-- <button type="button">제품 더 알아보기</button> -->
         </div>
       </div>
-      <div class="section">shop</div>
+
+
+      <div class="section">모하징</div>
       <div class="section">technology</div>
       <div class="section">owner</div>
       <div class="section"></div>
     </div>
 
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script>
 
+
+<!-- / * AOS 라이브러리 * / -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+<!-- / * FULLPAGE * / -->
     <script>
       new fullpage("#fullpage", {
         autoScrolling: true,

@@ -16,6 +16,7 @@
     "parcel": "^2.9.3"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "fullpage.js": "^4.0.20"
   }
 }

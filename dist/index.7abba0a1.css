@@ -137,7 +137,11 @@ body {
   height: 50px;
 }
 
-#fullpage #main_item1 .main_item_wrap, #fullpage #main_item2 .main_item_wrap {
+#fullpage #collection {
+  background-color: #e6e9ee;
+}
+
+#fullpage #collection .collection_wrap, #fullpage #main_item1 .main_item_wrap, #fullpage #main_item2 .main_item_wrap {
   justify-content: center;
   display: flex;
 }

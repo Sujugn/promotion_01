@@ -148,7 +148,10 @@ body {
   } //company
 
   #collection {
+    background-color: #e6e9ee;
     .collection_wrap {
+      display: flex;
+      justify-content: center;
       .collection_title {
         h2 {
         }
